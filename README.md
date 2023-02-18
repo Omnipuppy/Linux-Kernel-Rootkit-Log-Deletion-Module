@@ -7,7 +7,7 @@ gcc -o log_cleaner.o -c log_cleaner.c -I /lib/modules/$(uname -r)/build/include
 
 make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
 
-sudo insmod clean_logs.ko date="2022-01-01"
+sudo insmod log_cleaner.ko date="2022-01-01"
 
 
 
